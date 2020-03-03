@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     `java-library`
-    kotlin("jvm") version "1.3.61"
-    id("org.jmailen.kotlinter") version "2.3.1"
+    kotlin("jvm")
+    id("org.jmailen.kotlinter")
     jacoco
 }
 
