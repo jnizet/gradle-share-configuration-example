@@ -38,9 +38,10 @@ tasks {
 }
 
 dependencies {
+    api(platform(project(":platform")))
     api(kotlin("stdlib-jdk8"))
-    implementation("org.slf4j:slf4j-api:1.7.30")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.6.0")
+    implementation("org.slf4j:slf4j-api")
+    testImplementation("org.junit.jupiter:junit-jupiter")
     // ...
 }
 

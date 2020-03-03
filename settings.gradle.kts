@@ -7,4 +7,4 @@ pluginManagement {
 
 rootProject.name = "gradle-share-configuration-example"
 
-include("red", "blue", "green")
+include("platform", "red", "blue", "green")
