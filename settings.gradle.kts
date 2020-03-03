@@ -1,7 +1,6 @@
 pluginManagement {
     plugins {
-        kotlin("jvm") version "1.3.61"
-        id("org.jmailen.kotlinter") version "2.3.1"
+        // other plugins not configured in buildSrc could still be here
     }
 }
 
