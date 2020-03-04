@@ -3,7 +3,6 @@ plugins {
     kotlin("jvm")
     id("org.jmailen.kotlinter")
     jacoco
-    id("com.colors.sharedsettings")
 }
 
 dependencies {

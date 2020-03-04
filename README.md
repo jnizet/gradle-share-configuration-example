@@ -16,3 +16,10 @@ and making sure all the JVM subprojects use the same library versions.
 
 The fourth commit uses a plugin in buildSrc that reacts to the other plugins by configuring
 their extensions or tasks the same way.
+
+The fifth commit moves the shared configuration from a plugin in buildSrc to the root project
+build script, inside a `subprojects` block. The trick is to declare the plugins in the root 
+build script but without applying them, so that the classes of the plugin are available to 
+the root build script.
+By applying this technique, the plugins versions can be moved back to the settings.gradle.kts 
+file as in the second commit.
